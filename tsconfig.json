@@ -8,7 +8,7 @@
     "allowJs": true,
     "moduleResolution": "node",
     //    for absolute paths
-    "baseUrl": ".",
+//    "baseUrl": ".",
     //    setting for es6 imports
     "esModuleInterop": true,
 
