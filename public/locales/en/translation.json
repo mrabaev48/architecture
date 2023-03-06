@@ -3,5 +3,8 @@
   "translate": "Translate",
   "language": "English",
   "toggle": "Toggle",
-  "pageNotFound": "Page not found"
+  "pageNotFound": "Page not found",
+  "somethingWentWrong": "Something went wrong.",
+  "refreshPage": "Refresh page",
+  "throwError": "Throw Error"
 }
