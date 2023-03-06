@@ -1,5 +1,7 @@
 {
   "translationKey": "Ключ для перевода",
   "translate": "Перевод",
-  "language": "Русский"
+  "language": "Русский",
+  "toggle": "Переключить",
+  "pageNotFound": "Страница не найдена"
 }

@@ -1,5 +1,7 @@
 {
   "translationKey": "Key for translation",
   "translate": "Translate",
-  "language": "English"
+  "language": "English",
+  "toggle": "Toggle",
+  "pageNotFound": "Page not found"
 }
