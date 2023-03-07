@@ -9,7 +9,7 @@ describe('Button', () => {
     });
 
     test('With theme CLEAR', () => {
-        render(<Button theme={ThemeButton.CLEAR}>TEST</Button>);
+        render(<Button theme={ThemeButton.Clear}>TEST</Button>);
         expect(screen.getByText('TEST')).toHaveClass('clear');
         screen.debug();
     });
