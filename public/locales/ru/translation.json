@@ -1,0 +1,10 @@
+{
+  "translationKey": "Ключ для перевода",
+  "translate": "Перевод",
+  "language": "Русский",
+  "toggle": "Переключить",
+  "pageNotFound": "Страница не найдена",
+  "somethingWentWrong": "Что то пошло не так.",
+  "refreshPage": "Обновить страницу",
+  "throwError": "Сгенерировать ошибку"
+}

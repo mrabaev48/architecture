@@ -1,0 +1,10 @@
+{
+  "translationKey": "Key for translation",
+  "translate": "Translate",
+  "language": "English",
+  "toggle": "Toggle",
+  "pageNotFound": "Page not found",
+  "somethingWentWrong": "Something went wrong.",
+  "refreshPage": "Refresh page",
+  "throwError": "Throw Error"
+}
