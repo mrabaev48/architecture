@@ -1,5 +1,10 @@
 {
+  "aboutPage": "aboutPage",
   "language": "",
+  "mainPage": "mainPage",
+  "menuItems": {
+    "mainPage": ""
+  },
   "pageNotFound": "",
   "refreshPage": "",
   "somethingWentWrong": "",

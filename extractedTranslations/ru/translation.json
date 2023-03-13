@@ -1,0 +1,13 @@
+{
+  "aboutPage": "aboutPage",
+  "language": "language",
+  "mainPage": "mainPage",
+  "menuItems": {
+    "mainPage": "mainPage"
+  },
+  "pageNotFound": "pageNotFound",
+  "refreshPage": "refreshPage",
+  "somethingWentWrong": "somethingWentWrong",
+  "throwError": "throwError",
+  "toggle": "toggle"
+}
