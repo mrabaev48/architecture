@@ -9,5 +9,6 @@
   "refreshPage": "Refresh page",
   "throwError": "Throw Error",
   "mainPage": "Main",
-  "aboutPage": "About"
+  "aboutPage": "About",
+  "login": "login"
 }
