@@ -1,6 +1,7 @@
 {
   "aboutPage": "aboutPage",
   "language": "",
+  "login": "login",
   "mainPage": "mainPage",
   "menuItems": {
     "mainPage": ""

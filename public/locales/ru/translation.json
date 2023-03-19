@@ -9,5 +9,6 @@
   "refreshPage": "Обновить страницу",
   "throwError": "Сгенерировать ошибку",
   "mainPage": "Главная",
-  "aboutPage": "О сайте"
+  "aboutPage": "О сайте",
+  "login": "login"
 }
