@@ -5,7 +5,7 @@ import { buildSvgLoader } from '../build/loaders/buildSvgLoader';
 
 export default ({ config }: { config: webpack.Configuration }) => {
     const srcPath = path.resolve(__dirname, '..', '..', 'src');
-    config.resolve.modules.push(srcPath);
+    config.resolve.modules.unshift(srcPath);
     config.resolve.extensions.push('.ts', '.tsx');
 
     // eslint-disable-next-line no-param-reassign
