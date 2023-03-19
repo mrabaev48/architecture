@@ -5,8 +5,8 @@ import { ButtonTheme } from 'shared/ui/Button/ui/Button';
 import cls from './LangSwitcher.module.scss';
 
 interface LangSwitcherProps {
-  className?: string;
-  short?: boolean;
+    className?: string;
+    short?: boolean;
 }
 
 export const LangSwitcher = ({ className = '', short }: LangSwitcherProps) => {
@@ -20,8 +20,7 @@ export const LangSwitcher = ({ className = '', short }: LangSwitcherProps) => {
         <Button
             className={classNames(cls.LangSwitcher, {}, [className])}
             theme={ButtonTheme.Clear}
-            onClick={toggle}
-        >
+            onClick={toggle}>
             {t(short ? 'shortLanguage' : 'language')}
         </Button>
     );

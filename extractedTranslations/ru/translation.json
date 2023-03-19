@@ -1,14 +1,14 @@
 {
-  "aboutPage": "aboutPage",
-  "language": "language",
-  "login": "login",
-  "mainPage": "mainPage",
-  "menuItems": {
-    "mainPage": "mainPage"
-  },
-  "pageNotFound": "pageNotFound",
-  "refreshPage": "refreshPage",
-  "somethingWentWrong": "somethingWentWrong",
-  "throwError": "throwError",
-  "toggle": "toggle"
+    "aboutPage": "aboutPage",
+    "language": "language",
+    "login": "login",
+    "mainPage": "mainPage",
+    "menuItems": {
+        "mainPage": "mainPage"
+    },
+    "pageNotFound": "pageNotFound",
+    "refreshPage": "refreshPage",
+    "somethingWentWrong": "somethingWentWrong",
+    "throwError": "throwError",
+    "toggle": "toggle"
 }

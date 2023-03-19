@@ -13,7 +13,7 @@ import MainPageIcon from 'shared/assets/icons/main-20-20.svg';
 import cls from './Sidebar.module.scss';
 
 interface SidebarProps {
-  className?: string;
+    className?: string;
 }
 
 export const Sidebar = ({ className = '' }: SidebarProps) => {
@@ -28,40 +28,30 @@ export const Sidebar = ({ className = '' }: SidebarProps) => {
     return (
         <div
             data-testid="sidebar"
-            className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [
-                className,
-            ])}
-        >
+            className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}>
             <Button
                 data-testid="sidebar-toggle"
                 onClick={onToggle}
                 className={cls.collapsedBtn}
                 theme={ButtonTheme.BackgroundInverted}
                 square
-                size={ButtonSize.L}
-            >
+                size={ButtonSize.L}>
                 {collapsed ? '>' : '<'}
             </Button>
             <div className={cls.items}>
                 <AppLink
                     theme={AppLinkTheme.Secondary}
                     to={RoutePath.main}
-                    className={cls.item}
-                >
+                    className={cls.item}>
                     <MainPageIcon className={cls.icon} />
-                    <span className={cls.link}>
-                        {t('mainPage')}
-                    </span>
+                    <span className={cls.link}>{t('mainPage')}</span>
                 </AppLink>
                 <AppLink
                     theme={AppLinkTheme.Secondary}
                     to={RoutePath.about}
-                    className={cls.item}
-                >
+                    className={cls.item}>
                     <AboutPageIcon className={cls.icon} />
-                    <span className={cls.link}>
-                        {t('aboutPage')}
-                    </span>
+                    <span className={cls.link}>{t('aboutPage')}</span>
                 </AppLink>
             </div>
             <div className={cls.switchers}>

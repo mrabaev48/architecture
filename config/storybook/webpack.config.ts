@@ -3,7 +3,7 @@ import path from 'path';
 import { buildCssLoader } from '../build/loaders/buildCssLoader';
 import { buildSvgLoader } from '../build/loaders/buildSvgLoader';
 
-export default ({ config }: {config: webpack.Configuration}) => {
+export default ({ config }: { config: webpack.Configuration }) => {
     const srcPath = path.resolve(__dirname, '..', '..', 'src');
     config.resolve.modules.push(srcPath);
     config.resolve.extensions.push('.ts', '.tsx');

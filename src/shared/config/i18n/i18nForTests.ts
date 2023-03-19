@@ -1,21 +1,19 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-i18n
-    .use(initReactI18next)
-    .init({
-        lng: 'ru',
-        fallbackLng: 'ru',
-        debug: false,
+i18n.use(initReactI18next).init({
+    lng: 'ru',
+    fallbackLng: 'ru',
+    debug: false,
 
-        interpolation: {
-            escapeValue: false, // not need for react
-        },
+    interpolation: {
+        escapeValue: false, // not need for react
+    },
 
-        resources: {
-            ru: {
-                translations: {},
-            },
+    resources: {
+        ru: {
+            translations: {},
         },
-    });
+    },
+});
 export default i18n;
