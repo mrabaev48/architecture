@@ -6,6 +6,11 @@
 import path from 'path';
 
 export default {
+    // Global variables
+    globals: {
+        __IS_DEV__: true,
+    },
+
     // Automatically clear mock calls, instances and results before every test
     clearMocks: true,
 
@@ -16,9 +21,9 @@ export default {
     coveragePathIgnorePatterns: ['\\\\node_modules\\\\'],
 
     // An array of directory names to be searched recursively up from the requiring module's location
-    moduleDirectories: ['node_modules', 'src'],
+    moduleDirectories: ['node_modules'],
 
-    modulePath: ['<rootDir>src'],
+    modulePaths: ['<rootDir>src'],
 
     // An array of file extensions your modules use
     moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'json', 'node'],
