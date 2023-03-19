@@ -1,23 +1,19 @@
 import { classNames } from 'shared/lib/classNames/classNames';
-import React, {
-    ReactNode, useCallback, useEffect, useRef, useState,
-} from 'react';
+import React, { ReactNode, useCallback, useEffect, useRef, useState } from 'react';
 import { Mods } from 'shared/lib/types/Mods/Mods';
 import { Portal } from 'shared/ui/Portal';
 import cls from './Modal.module.scss';
 
 interface ModalProps {
-  className?: string;
-  children?: ReactNode;
-  isOpen?:boolean;
-  onClose?: () => void;
+    className?: string;
+    children?: ReactNode;
+    isOpen?: boolean;
+    onClose?: () => void;
 }
 
 const ANIMATION_DELAY = 300;
 
-export const Modal = ({
-    className = '', children, onClose, isOpen,
-}: ModalProps) => {
+export const Modal = ({ className = '', children, onClose, isOpen }: ModalProps) => {
     const timeRef = useRef<ReturnType<typeof setTimeout>>();
     const [isClosing, setIsClosing] = useState(false);
 
@@ -40,11 +36,14 @@ export const Modal = ({
         }
     }, [onClose]);
 
-    const onKeyDown = useCallback((e: KeyboardEvent) => {
-        if (e.key === 'Escape') {
-            closeHandler();
-        }
-    }, [closeHandler]);
+    const onKeyDown = useCallback(
+        (e: KeyboardEvent) => {
+            if (e.key === 'Escape') {
+                closeHandler();
+            }
+        },
+        [closeHandler]
+    );
 
     const onContentClick = (e: React.MouseEvent) => {
         e.stopPropagation();
@@ -63,8 +62,12 @@ export const Modal = ({
     return (
         <Portal>
             <div className={classNames(cls.Modal, modalMods, [className])}>
-                <div className={cls.overlay} onClick={closeHandler}>
-                    <div className={classNames(cls.content, contentMods)} onClick={onContentClick}>
+                <div
+                    className={cls.overlay}
+                    onClick={closeHandler}>
+                    <div
+                        className={classNames(cls.content, contentMods)}
+                        onClick={onContentClick}>
                         {children}
                     </div>
                 </div>

@@ -1,14 +1,14 @@
 {
-  "translationKey": "Key for translation",
-  "translate": "Translate",
-  "language": "English",
-  "shortLanguage": "En",
-  "toggle": "Toggle",
-  "pageNotFound": "Page not found",
-  "somethingWentWrong": "Something went wrong.",
-  "refreshPage": "Refresh page",
-  "throwError": "Throw Error",
-  "mainPage": "Main",
-  "aboutPage": "About",
-  "login": "login"
+    "translationKey": "Key for translation",
+    "translate": "Translate",
+    "language": "English",
+    "shortLanguage": "En",
+    "toggle": "Toggle",
+    "pageNotFound": "Page not found",
+    "somethingWentWrong": "Something went wrong.",
+    "refreshPage": "Refresh page",
+    "throwError": "Throw Error",
+    "mainPage": "Main",
+    "aboutPage": "About",
+    "login": "login"
 }

@@ -7,7 +7,7 @@ import { Modal } from 'shared/ui/Modal';
 import cls from './Navbar.module.scss';
 
 interface NavbarProps {
-  className?: string;
+    className?: string;
 }
 
 export const Navbar = ({ className = '' }: NavbarProps) => {
@@ -22,11 +22,12 @@ export const Navbar = ({ className = '' }: NavbarProps) => {
             <Button
                 theme={ButtonTheme.ClearInverted}
                 className={cls.links}
-                onClick={onToggleModal}
-            >
+                onClick={onToggleModal}>
                 {t('login')}
             </Button>
-            <Modal isOpen={isAuthModal} onClose={onToggleModal}>
+            <Modal
+                isOpen={isAuthModal}
+                onClose={onToggleModal}>
                 {t('login')}
             </Modal>
         </div>

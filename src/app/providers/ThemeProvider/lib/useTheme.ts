@@ -6,8 +6,8 @@ import {
 } from 'app/providers/ThemeProvider/lib/ThemeContext';
 
 interface UseThemeResult {
-  toggleTheme: () => void;
-  theme: Theme;
+    toggleTheme: () => void;
+    theme: Theme;
 }
 
 export const useTheme = (): UseThemeResult => {
