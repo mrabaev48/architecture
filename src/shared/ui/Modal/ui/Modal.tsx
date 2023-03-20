@@ -8,8 +8,8 @@ import React, {
 } from 'react';
 import { Mods } from 'shared/lib/types/Mods/Mods';
 import { Portal } from 'shared/ui/Portal';
-import cls from './Modal.module.scss';
 import { useTheme } from 'app/providers/ThemeProvider';
+import cls from './Modal.module.scss';
 
 interface ModalProps {
     className?: string;
