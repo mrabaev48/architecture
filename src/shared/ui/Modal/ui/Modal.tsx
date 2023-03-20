@@ -1,7 +1,14 @@
 import { classNames } from 'shared/lib/classNames/classNames';
-import React, { ReactNode, useCallback, useEffect, useRef, useState } from 'react';
+import React, {
+    ReactNode,
+    useCallback,
+    useEffect,
+    useRef,
+    useState,
+} from 'react';
 import { Mods } from 'shared/lib/types/Mods/Mods';
 import { Portal } from 'shared/ui/Portal';
+import { useTheme } from 'app/providers/ThemeProvider';
 import cls from './Modal.module.scss';
 
 interface ModalProps {
@@ -13,9 +20,15 @@ interface ModalProps {
 
 const ANIMATION_DELAY = 300;
 
-export const Modal = ({ className = '', children, onClose, isOpen }: ModalProps) => {
+export const Modal = ({
+    className = '',
+    children,
+    onClose,
+    isOpen,
+}: ModalProps) => {
     const timeRef = useRef<ReturnType<typeof setTimeout>>();
     const [isClosing, setIsClosing] = useState(false);
+    const { theme } = useTheme();
 
     const modalMods: Mods = {
         [cls.opened]: isOpen,
