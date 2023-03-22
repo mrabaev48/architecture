@@ -1,4 +1,5 @@
 {
+  "Password": "Password",
   "aboutPage": "aboutPage",
   "language": "",
   "login": "login",
@@ -7,8 +8,10 @@
     "mainPage": ""
   },
   "pageNotFound": "",
+  "password": "password",
   "refreshPage": "",
   "somethingWentWrong": "",
   "throwError": "",
-  "toggle": ""
+  "toggle": "",
+  "username": "username"
 }

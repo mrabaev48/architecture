@@ -14,10 +14,13 @@ export const LoginForm: FC<LoginFormProps> = ({ className }) => {
     return (
         <div className={classNames(cls.LoginForm, {}, [className])}>
             <Input
+                autofocus={true}
                 type={'text'}
                 className={cls.input}
+                placeholder={t('username')}
             />
             <Input
+                placeholder={t('password')}
                 type={'text'}
                 className={cls.input}
             />

@@ -10,5 +10,7 @@
     "throwError": "Throw Error",
     "mainPage": "Main",
     "aboutPage": "About",
-    "login": "login"
+    "username": "Username",
+    "password": "Password",
+    "login": "Login"
 }
