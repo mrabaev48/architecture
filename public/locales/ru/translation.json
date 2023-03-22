@@ -10,5 +10,7 @@
     "throwError": "Сгенерировать ошибку",
     "mainPage": "Главная",
     "aboutPage": "О сайте",
-    "login": "login"
+    "username": "Имя пользователя",
+    "password": "Пароль",
+    "login": "Войти"
 }
