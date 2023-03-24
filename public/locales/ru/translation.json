@@ -12,5 +12,8 @@
     "aboutPage": "О сайте",
     "username": "Имя пользователя",
     "password": "Пароль",
-    "login": "Войти"
+    "login": "Войти",
+    "authorizationFormTitle": "Форма авторизации",
+    "wrongEmailOrPassword": "Неверный логин или пароль",
+    "logout": "Выйти"
 }
