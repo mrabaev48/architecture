@@ -1,7 +1,7 @@
 import { configureStore, ReducersMapObject } from '@reduxjs/toolkit';
 import { counterReducer } from 'entities/Counter';
 import { userReducer } from 'entities/User';
-import { loginReducer } from 'features/AuthByUsername';
+import { AuthMiddleware, loginReducer } from 'features/AuthByUsername';
 import { StateSchema } from './StateSchema';
 
 export const createReduxStore = (initialState?: StateSchema) => {
@@ -15,5 +15,8 @@ export const createReduxStore = (initialState?: StateSchema) => {
         reducer: rootReducers,
         devTools: __IS_DEV__,
         preloadedState: initialState,
+        // @ts-ignore
+        middleware: (getDefaultMiddleware) =>
+            getDefaultMiddleware().concat(AuthMiddleware),
     });
 };
