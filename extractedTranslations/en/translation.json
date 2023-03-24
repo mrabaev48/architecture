@@ -1,17 +1,19 @@
 {
   "Password": "Password",
   "aboutPage": "aboutPage",
+  "authorizationFormTitle": "Authorization Form",
   "language": "",
-  "login": "login",
+  "login": "Login",
+  "logout": "logout",
   "mainPage": "mainPage",
   "menuItems": {
     "mainPage": ""
   },
   "pageNotFound": "",
-  "password": "password",
+  "password": "Password",
   "refreshPage": "",
   "somethingWentWrong": "",
   "throwError": "",
   "toggle": "",
-  "username": "username"
+  "username": "Username"
 }

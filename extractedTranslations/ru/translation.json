@@ -1,17 +1,19 @@
 {
   "Password": "Password",
   "aboutPage": "aboutPage",
+  "authorizationFormTitle": "Форма авторизации",
   "language": "language",
-  "login": "login",
+  "login": "Войти",
+  "logout": "logout",
   "mainPage": "mainPage",
   "menuItems": {
     "mainPage": "mainPage"
   },
   "pageNotFound": "pageNotFound",
-  "password": "password",
+  "password": "Пароль",
   "refreshPage": "refreshPage",
   "somethingWentWrong": "somethingWentWrong",
   "throwError": "throwError",
   "toggle": "toggle",
-  "username": "username"
+  "username": "Имя пользователя"
 }

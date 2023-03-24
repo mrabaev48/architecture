@@ -12,5 +12,8 @@
     "aboutPage": "About",
     "username": "Username",
     "password": "Password",
-    "login": "Login"
+    "login": "Login",
+    "authorizationFormTitle": "Authorization Form",
+    "wrongEmailOrPassword": "Wrong Email or password",
+    "logout": "Logout"
 }
