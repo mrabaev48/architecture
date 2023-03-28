@@ -5,7 +5,10 @@ import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import { BuildOptions } from './types/config';
 
-export function buildPlugins({ paths, isDev }: BuildOptions): webpack.WebpackPluginInstance[] {
+export function buildPlugins({
+    paths,
+    isDev,
+}: BuildOptions): webpack.WebpackPluginInstance[] {
     const plugins = [
         new HtmlWebpackPlugin({
             template: paths.html,
@@ -21,13 +24,13 @@ export function buildPlugins({ paths, isDev }: BuildOptions): webpack.WebpackPlu
         new webpack.HotModuleReplacementPlugin(),
     ];
 
-    if (isDev) {
-        plugins.push(
-            new BundleAnalyzerPlugin({
-                openAnalyzer: false,
-            })
-        );
+    plugins.push(
+        new BundleAnalyzerPlugin({
+            openAnalyzer: false,
+        })
+    );
 
+    if (isDev) {
         plugins.push(new ReactRefreshWebpackPlugin());
     }
 

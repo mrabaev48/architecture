@@ -5,5 +5,7 @@ import { LoginSchema } from 'features/AuthByUsername/model/types/LoginSchema';
 export interface StateSchema {
     counter: CounterSchema;
     user: UserSchema;
+
+    // Async reducers
     loginForm?: LoginSchema;
 }
