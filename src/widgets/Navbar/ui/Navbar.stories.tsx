@@ -33,7 +33,7 @@ LightWithLoggedUser.decorators = [
     StoreDecorator({
         user: {
             authData: {
-                id: 1,
+                id: '1',
                 password: 'test',
                 username: 'test',
             },
@@ -48,7 +48,7 @@ DarkWithLoggedUser.decorators = [
     StoreDecorator({
         user: {
             authData: {
-                id: 1,
+                id: '1',
                 password: 'test',
                 username: 'test',
             },
