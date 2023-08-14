@@ -1,5 +1,6 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import React, {
+    MutableRefObject,
     ReactNode,
     useCallback,
     useEffect,
@@ -24,10 +25,10 @@ export const Modal = ({
     className = '',
     children,
     onClose,
-    isOpen,
+    isOpen = false,
     lazy,
 }: ModalProps) => {
-    const timeRef = useRef<ReturnType<typeof setTimeout>>();
+    const timeRef = useRef() as MutableRefObject<ReturnType<typeof setTimeout>>;
     const [isClosing, setIsClosing] = useState(false);
     const [isMounted, setIsMounted] = useState(false);
 

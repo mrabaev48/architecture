@@ -4,12 +4,13 @@ import { useTranslation } from 'react-i18next';
 import { Button } from 'shared/ui/Button';
 import { Input } from 'shared/ui/Input';
 import { ButtonTheme } from 'shared/ui/Button/ui/Button';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { Text, TextTheme } from 'shared/ui/Text';
 import {
     DynamicModuleLoader,
     ReducersList,
 } from 'shared/lib/components/DynamicModuleLoader';
+import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import cls from './LoginForm.module.scss';
 import { loginActions, loginReducer } from '../../model/slice/login.slice';
 import { loginByUsername } from '../../model/services/loginByUsername/loginByUsername';
@@ -17,7 +18,6 @@ import { getLoginUsername } from '../../model/selectors/getLoginUsername/getLogi
 import { getLoginError } from '../../model/selectors/getLoginError/getLoginError';
 import { getLoginIsLoading } from '../../model/selectors/getLoginIsLoading/getLoginIsLoading';
 import { getLoginPassword } from '../../model/selectors/getLoginPassword/getLoginPassword';
-import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 
 export interface LoginFormProps {
     className?: string;
@@ -29,7 +29,7 @@ const initialReducers: ReducersList = {
 };
 
 const LoginForm: FC<LoginFormProps> = memo((props: LoginFormProps) => {
-    const { className, onSuccess } = props;
+    const { className = '', onSuccess } = props;
     const { t } = useTranslation();
     const dispatch = useAppDispatch();
 
@@ -53,7 +53,12 @@ const LoginForm: FC<LoginFormProps> = memo((props: LoginFormProps) => {
     );
 
     const onLoginClick = useCallback(async () => {
-        const result = await dispatch(loginByUsername({ username, password }));
+        const result = await dispatch(
+            loginByUsername({
+                username,
+                password,
+            })
+        );
 
         if (result.meta.requestStatus === 'fulfilled') {
             onSuccess();

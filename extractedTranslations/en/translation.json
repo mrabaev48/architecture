@@ -1,8 +1,10 @@
 {
+  "": "",
   "PROFILE PAGE": "",
   "Password": "Password",
   "aboutPage": "aboutPage",
   "authorizationFormTitle": "Authorization Form",
+  "edit": "edit",
   "language": "",
   "login": "Login",
   "logout": "logout",
@@ -12,9 +14,16 @@
   },
   "pageNotFound": "",
   "password": "Password",
+  "profile": "profile",
   "refreshPage": "",
   "somethingWentWrong": "",
   "throwError": "",
   "toggle": "",
-  "username": "Username"
+  "username": "Username",
+  "youLastname": "youLastname",
+  "yourFirstName": "yourFirstName",
+  "yourFirstname": "yourFirstname",
+  "yourLastname": "yourLastname",
+  "yourName": "yourName",
+  "yourSurname": "yourSurname"
 }

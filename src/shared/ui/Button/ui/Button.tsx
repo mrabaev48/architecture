@@ -27,10 +27,10 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export const Button: FC<ButtonProps> = memo((props) => {
     const {
-        className,
-        theme,
+        className = '',
+        theme = ButtonTheme.Outline,
         size = ButtonSize.M,
-        square,
+        square = false,
         children,
         ...otherProps
     } = props;

@@ -11,18 +11,18 @@ interface UseThemeResult {
 }
 
 export const useTheme = (): UseThemeResult => {
-    const { theme, setTheme } = useContext(ThemeContext);
+    const { theme = Theme.Light, setTheme } = useContext(ThemeContext);
     const toggleTheme = () => {
         let newTheme: Theme;
         switch (theme) {
-        case Theme.Dark:
-            newTheme = Theme.Light;
-            break;
-        case Theme.Light:
-            newTheme = Theme.Dark;
-            break;
-        default:
-            newTheme = Theme.Light;
+            case Theme.Dark:
+                newTheme = Theme.Light;
+                break;
+            case Theme.Light:
+                newTheme = Theme.Dark;
+                break;
+            default:
+                newTheme = Theme.Light;
         }
         document.body.className = newTheme;
         setTheme?.(newTheme);
@@ -30,7 +30,7 @@ export const useTheme = (): UseThemeResult => {
     };
 
     return {
-        theme,
+        theme: theme || Theme.Light,
         toggleTheme,
     };
 };

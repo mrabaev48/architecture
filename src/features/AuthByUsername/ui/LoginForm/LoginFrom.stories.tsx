@@ -12,7 +12,7 @@ export default {
     component: LoginForm,
     decorators: [
         StoreDecorator({
-            loginForm: { password: 'test', username: 'test' },
+            loginForm: { password: 'test', username: 'test', isLoading: false },
         }),
     ],
 } as ComponentMeta<typeof LoginForm>;
@@ -25,7 +25,12 @@ export const LightThemeLoginForm = Template.bind({});
 LightThemeLoginForm.args = {};
 LightThemeLoginForm.decorators = [
     StoreDecorator({
-        loginForm: { error: AuthorizationErrorCode.WrongEmailOrPassword },
+        loginForm: {
+            error: AuthorizationErrorCode.WrongEmailOrPassword,
+            username: '',
+            isLoading: false,
+            password: '',
+        },
     }),
 ];
 
@@ -34,7 +39,12 @@ DarkThemeLoginForm.args = {};
 DarkThemeLoginForm.decorators = [
     ThemeDecorator(Theme.Dark),
     StoreDecorator({
-        loginForm: { error: AuthorizationErrorCode.WrongEmailOrPassword },
+        loginForm: {
+            error: AuthorizationErrorCode.WrongEmailOrPassword,
+            username: '',
+            isLoading: false,
+            password: '',
+        },
     }),
 ];
 
@@ -42,7 +52,12 @@ export const LightThemeLoginFormWithError = Template.bind({});
 LightThemeLoginFormWithError.args = {};
 LightThemeLoginFormWithError.decorators = [
     StoreDecorator({
-        loginForm: { error: AuthorizationErrorCode.WrongEmailOrPassword },
+        loginForm: {
+            error: AuthorizationErrorCode.WrongEmailOrPassword,
+            username: '',
+            password: '',
+            isLoading: false,
+        },
     }),
 ];
 
@@ -51,7 +66,12 @@ DarkThemeLoginFormWithError.args = {};
 DarkThemeLoginFormWithError.decorators = [
     ThemeDecorator(Theme.Dark),
     StoreDecorator({
-        loginForm: { error: AuthorizationErrorCode.WrongEmailOrPassword },
+        loginForm: {
+            error: AuthorizationErrorCode.WrongEmailOrPassword,
+            username: '',
+            password: '',
+            isLoading: false,
+        },
     }),
 ];
 
@@ -59,7 +79,7 @@ export const LightThemeLoginFormWithLoading = Template.bind({});
 LightThemeLoginFormWithLoading.args = {};
 LightThemeLoginFormWithLoading.decorators = [
     StoreDecorator({
-        loginForm: { isLoading: true },
+        loginForm: { isLoading: true, password: '', username: '' },
     }),
 ];
 
@@ -68,6 +88,6 @@ DarkThemeLoginFormWithLoading.args = {};
 DarkThemeLoginFormWithLoading.decorators = [
     ThemeDecorator(Theme.Dark),
     StoreDecorator({
-        loginForm: { isLoading: true },
+        loginForm: { isLoading: true, password: '', username: '' },
     }),
 ];

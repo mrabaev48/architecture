@@ -13,7 +13,7 @@ export default {
     },
     decorators: [
         StoreDecorator({
-            loginForm: { password: 'test', username: 'test' },
+            loginForm: { password: 'test', username: 'test', isLoading: false },
         }),
     ],
 } as ComponentMeta<typeof Navbar>;

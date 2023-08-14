@@ -11,7 +11,7 @@ interface LoginModalProps {
 }
 
 export const LoginModal: FC<LoginModalProps> = memo((props) => {
-    const { className, isOpen, onClose } = props;
+    const { className = '', isOpen, onClose } = props;
 
     return (
         <Modal

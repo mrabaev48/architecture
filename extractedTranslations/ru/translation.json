@@ -1,8 +1,10 @@
 {
+  "": "",
   "PROFILE PAGE": "PROFILE PAGE",
   "Password": "Password",
   "aboutPage": "aboutPage",
   "authorizationFormTitle": "Форма авторизации",
+  "edit": "edit",
   "language": "language",
   "login": "Войти",
   "logout": "logout",
@@ -12,9 +14,16 @@
   },
   "pageNotFound": "pageNotFound",
   "password": "Пароль",
+  "profile": "profile",
   "refreshPage": "refreshPage",
   "somethingWentWrong": "somethingWentWrong",
   "throwError": "throwError",
   "toggle": "toggle",
-  "username": "Имя пользователя"
+  "username": "Имя пользователя",
+  "youLastname": "youLastname",
+  "yourFirstName": "yourFirstName",
+  "yourFirstname": "yourFirstname",
+  "yourLastname": "yourLastname",
+  "yourName": "yourName",
+  "yourSurname": "yourSurname"
 }

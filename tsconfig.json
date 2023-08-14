@@ -6,15 +6,17 @@
     "target": "ES5",
     "jsx": "react-jsx",
     "allowJs": true,
+    "strict": true,
     "moduleResolution": "node",
     //    for absolute paths
     "baseUrl": ".",
     "paths": {
-      "*": ["./src/*"]
+      "*": [
+        "./src/*"
+      ]
     },
     //    setting for es6 imports
     "esModuleInterop": true,
-
     /*
         for using default imports
         instead of using commonjs import with 'require' function
@@ -26,7 +28,6 @@
       "module": "CommonJS"
     }
   },
-
   "include": [
     "./config/jest/setupTests.ts",
     "./src/**/*.ts",
